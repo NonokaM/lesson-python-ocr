@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  google_cloud_sdk:
+    build: .
+    container_name: google_cloud_sdk
+    working_dir: /root/src
+    tty: true
+    volumes:
+      - ./src:/root/src
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: /root/src/key.json

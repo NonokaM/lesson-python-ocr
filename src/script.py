@@ -29,4 +29,4 @@ def detect_text(path):
         )
 
 
-detect_text("./img.JPG")
+detect_text("./resources/img.JPG")

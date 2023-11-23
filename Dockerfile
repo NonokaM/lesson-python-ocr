@@ -5,3 +5,5 @@ RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 
 # vision クライアント ライブラリのインストール
 RUN python -m pip install --upgrade google-cloud-vision
+
+CMD ["python", "/root/src/test.py"]

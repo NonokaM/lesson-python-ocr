@@ -20,7 +20,7 @@ client = vision.ImageAnnotatorClient()
 for im in image_list:
     print('検証画像：' + im['type'])
 
-    file_name = os.path.abspath('src/resources/' + im['file_name'])
+    file_name = os.path.abspath('resources/' + im['file_name'])
 
     # 画像をメモリにロード
     with io.open(file_name, 'rb') as image_file:
